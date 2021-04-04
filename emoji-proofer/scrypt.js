@@ -147,7 +147,7 @@ function utoa(data) {
   return btoa(unescape(encodeURIComponent(data)));
 }
 
-let codes_dict = convert(JSON.parse(httpRequest("/codes.json", "GET").responseText))
+let codes_dict = convert(JSON.parse(httpRequest("codes.json", "GET").responseText))
 
 let app = new Vue({
     el: '#app',
